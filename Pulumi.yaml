@@ -1,0 +1,8 @@
+name: repro
+description: A minimal TypeScript Pulumi program
+runtime: nodejs
+main: index.ts
+config:
+  pulumi:autonaming:
+    value:
+      pattern: ${name}-${alphanum(1)}
